@@ -1,0 +1,96 @@
+body{
+    height: auto;
+    margin: 0px;
+    
+    /* Provisional font text */
+    font-family: Raleway, 'Calibri Light'; 
+    font-size: 16px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background-color: white;
+}
+
+/* General Styles for all the Text Boxes */
+.box{
+    width: 88%;
+    height: 100vh;
+    padding: 4% 6%;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title{
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+
+    margin: 2.5% 0%;
+}
+
+.subtitle{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* #region Text Box 1 */
+#box_txt_1{
+    background-color: rgba(0, 0, 0, 1);
+    align-items: center;
+}
+
+#principal_title{
+    text-align: center;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-direction: row;
+
+    gap: 30px;
+
+    border-bottom: 1px solid white;
+}
+
+#box_txt_1 img{
+    width: 90px;
+}
+
+#box_txt_1 div{
+    text-align: center;
+}
+/* #endregion */
+
+#box_txt_2{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#box_txt_3{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#box_txt_4{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.highlight{
+    width: 110.5%;
+    padding: 2.5% 1.5%;
+    
+    font-style: italic;
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
