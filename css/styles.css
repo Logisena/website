@@ -1,18 +1,15 @@
 body{
     height: auto;
     margin: 0px;
-    
     /* Provisional font text */
     font-family: Raleway, 'Calibri Light'; 
     font-size: 16px;
     color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
+    line-height: 30px;
     flex-direction: column;
-
     background-color: white;
 }
 
@@ -20,21 +17,18 @@ body{
 .box{
     width: 88%;
     height: 100vh;
-    padding: 4% 6%;
-
+    padding: 0% 6% 6% 6%;
     display: flex;
     justify-content: start;
     align-items: start;
-
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .title{
     width: 100%;
     font-size: 28px;
     font-weight: bold;
-
     margin: 2.5% 0%;
 }
 
@@ -47,19 +41,16 @@ body{
 #box_txt_1{
     background-color: rgba(0, 0, 0, 1);
     align-items: center;
+    height: auto;
 }
 
 #principal_title{
     text-align: center;
-    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
     flex-direction: row;
-
     gap: 30px;
-
     border-bottom: 1px solid white;
 }
 
@@ -70,12 +61,53 @@ body{
 #box_txt_1 div{
     text-align: center;
 }
+
+#table_certicates{
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2% 0.15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#table_certicates .row{
+    display: flex;
+    margin: 0;
+}
+
+#table_certicates .subtitle{
+    width: 93.8%;
+    padding: 1% 0%;
+    background-color: black;
+}
+
+#table_certicates div{
+    width: 96%;
+    border-radius: 5px;
+    margin: 1.2%;
+    display: flex;
+    justify-content: center;
+}
+
+#table_certicates img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 5px;
+}
 /* #endregion */
 
+/* #region Text Box 2 */
 #box_txt_2{
     background-color: rgba(0, 0, 0, 0.8);
 }
+/* #endregion */
 
+/* #region Other Boxes */
 #box_txt_3{
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -83,14 +115,14 @@ body{
 #box_txt_4{
     background-color: rgba(0, 0, 0, 0.4);
 }
+/* #endregion */
 
+/* Style to Highlight important text */
 .highlight{
     width: 110.5%;
     padding: 2.5% 1.5%;
-    
     font-style: italic;
-
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
 }
