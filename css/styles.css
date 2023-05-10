@@ -103,15 +103,48 @@ body{
 
 /* #region Text Box 2 */
 #box_txt_2{
+    height: auto;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+#box_txt_2 .title{
+    text-align: center;
+    margin-top: 8%;
+    padding-bottom: 4%;
+    border-bottom: 3px double red;
+}
+
+#box_txt_2 .row{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+#box_txt_2 .text{
+    border-left: 1px solid red;
+    padding: 4% 1% 4% 15px;
+}
+
+#box_txt_2 img{
+    width: 25%;
+}
+/* #endregion */
+
+/* #region Text Box 3 */
+#box_txt_3{
+    background: linear-gradient(315deg, black, rgb(50, 0, 0), rgb(150, 0, 0));
+    text-align: justify;
+}
+
+#box_txt_3 .title{
+    margin-top: 8%;
 }
 /* #endregion */
 
 /* #region Other Boxes */
-#box_txt_3{
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
 #box_txt_4{
     background-color: rgba(0, 0, 0, 0.4);
 }
