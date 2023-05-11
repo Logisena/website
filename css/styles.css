@@ -1,6 +1,6 @@
 body{
     height: auto;
-    margin: 0px;
+    margin: 0;
     /* Provisional font text */
     font-family: Raleway, 'Calibri Light'; 
     font-size: 16px;
@@ -13,10 +13,10 @@ body{
     background-color: white;
 }
 
-/* General Styles for all the Text Boxes */
+/* #region General Styles for all the Text Boxes */
 .box{
     width: 88%;
-    height: 100vh;
+    height: auto;
     padding: 0% 6% 6% 6%;
     display: flex;
     justify-content: start;
@@ -29,19 +29,24 @@ body{
     width: 100%;
     font-size: 28px;
     font-weight: bold;
-    margin: 2.5% 0%;
+    margin-top: 8%;
 }
 
 .subtitle{
     font-size: 22px;
     font-weight: bold;
 }
+/* #endregion */
 
 /* #region Text Box 1 */
 #box_txt_1{
     background-color: rgba(0, 0, 0, 1);
     align-items: center;
-    height: auto;
+    /* First, I need to edit the image without backdrop-filter, while I leave this here */
+    background-image: url('../assets/trailer1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #principal_title{
@@ -51,6 +56,7 @@ body{
     align-items: center;
     flex-direction: row;
     gap: 30px;
+    margin-top: 2.5%;
     border-bottom: 1px solid white;
 }
 
@@ -70,12 +76,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 #table_certicates .row{
     display: flex;
+    width: 47.2%;
     margin: 0;
 }
 
@@ -103,13 +110,11 @@ body{
 
 /* #region Text Box 2 */
 #box_txt_2{
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(330deg, black, rgba(32, 32, 32), rgba(75, 75, 75));
 }
 
 #box_txt_2 .title{
     text-align: center;
-    margin-top: 8%;
     padding-bottom: 4%;
     border-bottom: 3px double red;
 }
@@ -135,18 +140,81 @@ body{
 
 /* #region Text Box 3 */
 #box_txt_3{
-    background: linear-gradient(315deg, black, rgb(50, 0, 0), rgb(150, 0, 0));
+    background: linear-gradient(315deg, rgb(0, 0, 0), rgb(50, 0, 0), rgb(75, 0, 0), rgb(150, 0, 0));
     text-align: justify;
+    height: auto;
 }
 
 #box_txt_3 .title{
     margin-top: 8%;
+    margin-bottom: 0;
+}
+
+#box_txt_3 .list{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+#box_txt_3 li{
+    width: 50%;
 }
 /* #endregion */
 
-/* #region Other Boxes */
+/* #region Text Box 4 */
 #box_txt_4{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+}
+
+#box_txt_4 .title{
+    text-align: center;
+}
+
+#box_txt_4 .subtitle{
+    text-align: center;
+}
+
+#box_txt_4 div{
+    text-align: justify;
+}
+
+#box_txt_4 .highlight{
+    text-align: center;
+}
+
+#table_services{
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+#table_services .cell{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#table_services div{
+    text-align: center;
+    font-weight: bold;
+}
+
+#box_txt_4 img{
+    width: 80px;
+    height: auto;
+    max-height: 100%;
+}
+/* #endregion */
+
+/* #region Text Box 5 */
+#box_txt_5{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 /* #endregion */
 
@@ -155,6 +223,7 @@ body{
     width: 110.5%;
     padding: 2.5% 1.5%;
     font-style: italic;
+    text-align: center;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.2);
