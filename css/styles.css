@@ -10,7 +10,12 @@ body{
     align-items: center;
     line-height: 30px;
     flex-direction: column;
-    background-color: white;
+    /* background-color: white; */
+    background-image: url('../assets/trailer1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* #region General Styles for all the Text Boxes */
@@ -42,7 +47,6 @@ body{
 #box_txt_1{
     background-color: rgba(0, 0, 0, 1);
     align-items: center;
-    /* First, I need to edit the image without backdrop-filter, while I leave this here */
     background-image: url('../assets/trailer1.png');
     background-size: cover;
     background-position: center;
@@ -164,7 +168,7 @@ body{
 
 /* #region Text Box 4 */
 #box_txt_4{
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.1);
     align-items: center;
 }
 
@@ -214,7 +218,28 @@ body{
 
 /* #region Text Box 5 */
 #box_txt_5{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 1);
+}
+/* #endregion */
+
+/* #region Text Box 6 */
+#box_txt_6{
+    width: 96%;
+    background-color: rgba(150, 0, 0, 1);
+    justify-content: center;
+    align-items: center;
+    padding: 2% 2%;
+    gap: 4px 2%;
+}
+
+#box_txt_6 .link{
+    width: 45.25%;
+    padding: 2% 0%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
 /* #endregion */
 
